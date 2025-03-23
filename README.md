@@ -1,2 +1,2 @@
 # CreativeWebzz
-This is my repository for building my websites business profile.
+This is my repository for building my website business profile.
