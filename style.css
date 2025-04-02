@@ -120,3 +120,12 @@ footer {
 .service p {
     color: #666;
 }
+/* Logo Styling */
+.logo img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 50px;  /* Adjust as needed */
+    height: auto;
+    cursor: pointer;
+}
