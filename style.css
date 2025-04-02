@@ -146,8 +146,14 @@ footer {
 }
 
 .contact-info p {
-   
     margin:#1abc9c 5px 0;
+    color: #1abc9c ; 
+    font-weight:bold;
+    text-decoration:none;
+   margin:#1abc9c 5px 0;
+}
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 .social-links a {
