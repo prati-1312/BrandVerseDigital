@@ -123,12 +123,23 @@ footer {
 }
 /* Logo Styling */
 .logo img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;  /* Adjust as needed */
-    height: auto;
-    cursor: pointer;
+    /* Logo Styling */
+.logo img {
+    width: 120px;  /* Adjust size as needed */
+    height: 120px; /* Keep it equal to maintain a circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures it doesn't stretch */
+    border: 3px solid #fff; /* Optional: White border around the logo */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Increase Resolution (Ensure High-Quality Display) */
+@media (min-resolution: 2dppx) { 
+    .logo img {
+        width: 150px;  /* Slightly larger for high-resolution screens */
+        height: 150px;
+    }
+}
 }
 /* Footer Styling */
 footer {
