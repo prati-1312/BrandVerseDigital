@@ -17,7 +17,7 @@ header {
 
 /* Navigation */
 nav {
-    background: #e66db1;
+    background: #b31e72;
     padding: 10px;
     text-align: center;
 }
@@ -79,7 +79,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background: #e66db1;
+    background:#b31e72;
    
     color: white;
     text-align: center;
