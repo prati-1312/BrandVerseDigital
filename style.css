@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background: #2c3e50;
+    background:#e66db1;
     color: white;
     text-align: center;
     padding: 20px;
@@ -17,7 +17,7 @@ header {
 
 /* Navigation */
 nav {
-    background: #34495e;
+    background: #e66db1;
     padding: 10px;
     text-align: center;
 }
@@ -79,7 +79,8 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #e66db1;
+   
     color: white;
     text-align: center;
     padding: 10px;
@@ -131,7 +132,7 @@ footer {
 }
 /* Footer Styling */
 footer {
-    background: #2c3e50;
+    background: #e66db1;
     color: white;
     text-align: center;
     padding: 20px;
