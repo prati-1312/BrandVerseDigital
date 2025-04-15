@@ -141,6 +141,7 @@ footer {
 }
 /* Logo Styling */
 .logo img {
+    content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.png'); /* Add the image path */
     width: 100px; /* Adjust size as needed */
     height: 100px; /* Keep it equal to maintain a square */
     object-fit: cover; /* Ensures it doesn't stretch */
@@ -149,7 +150,6 @@ footer {
     display: block; /* Ensures it's treated as a block element */
     margin: 10px auto; /* Centers the logo horizontally */
 }
-
 /* Position the logo at the top left*/
 header .logo {
     position: absolute;
