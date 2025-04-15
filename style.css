@@ -150,13 +150,15 @@ footer {
     margin: 10px auto; /* Centers the logo horizontally */
 }
 
-/* Position the logo at the top */
+/* Position the logo at the top left*/
 header .logo {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10; /* Ensures it stays on top */
+    left: 10px; /* Adjusted to position the logo at the top left corner */
+    transform: none; /* Removed centering transform */
 }
     
 /* Footer Styling */
