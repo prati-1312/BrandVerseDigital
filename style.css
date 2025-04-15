@@ -141,24 +141,24 @@ footer {
 }
 /* Logo Styling */
 .logo img {
-    /* Logo Styling */
-.logo img {
-    width: 120px;  /* Adjust size as needed */
-    height: 120px; /* Keep it equal to maintain a circle */
-    border-radius: 50%; /* Makes the image circular */
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Keep it equal to maintain a square */
     object-fit: cover; /* Ensures it doesn't stretch */
     border: 3px solid #fff; /* Optional: White border around the logo */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    display: block; /* Ensures it's treated as a block element */
+    margin: 10px auto; /* Centers the logo horizontally */
 }
 
-/* Increase Resolution (Ensure High-Quality Display) */
-@media (min-resolution: 2dppx) { 
-    .logo img {
-        width: 150px;  /* Slightly larger for high-resolution screens */
-        height: 150px;
-    }
+/* Position the logo at the top */
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensures it stays on top */
 }
-}
+    
 /* Footer Styling */
 footer {
     background: #e66db1;
