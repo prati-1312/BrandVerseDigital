@@ -142,30 +142,15 @@ footer {
 /* Logo Styling */
 .logo img {
     content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.png'); /* Add the image path */
-    width: 80px; /* Adjust size as needed */
-    height: 80px; /* Keep it equal to maintain a square */
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Keep it equal to maintain a square */
     object-fit: cover; /* Ensures it doesn't stretch */
     border: 3px solid #120808; /* Optional: White border around the logo */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
     display: block; /* Ensures it's treated as a block element */
     margin: 10px auto; /* Centers the logo horizontally */
 }
-/* Position the logo at the top left*/
-header .logo {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    transform: translateX(-50%);
-    z-index: 10; /* Ensures it stays on top */
-    left: 10px; /* Adjusted to position the logo at the top left corner */
-    position: absolute; /* Position the logo absolutely */
-    top: 50%; /* Center vertically within the header */
-    left: 50%; /* Center horizontally within the header */
-    transform: translate(-50%, -50%); /* Adjust to perfectly center */
-    width: 60px; /* Make the logo smaller */
-    height: 60px; /* Keep it proportional */
-    z-index: 10; /* Ensures it stays on top */
-}
+
     
 /* Footer Styling */
 footer {
