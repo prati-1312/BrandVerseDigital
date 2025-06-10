@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #1abc9c;
+    background: #ffffff;
     border-radius: 5px;
 }
 
@@ -58,7 +58,7 @@ nav a:hover {
 .cta {
     text-align: center;
     padding: 20px;
-    background: #1abc9c;
+    background: #ffffff;
     color: white;
     margin: 20px auto;
     width: 60%;
@@ -158,7 +158,13 @@ header .logo {
     transform: translateX(-50%);
     z-index: 10; /* Ensures it stays on top */
     left: 10px; /* Adjusted to position the logo at the top left corner */
-    transform: none; /* Removed centering transform */
+    position: absolute; /* Position the logo absolutely */
+    top: 50%; /* Center vertically within the header */
+    left: 50%; /* Center horizontally within the header */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    width: 60px; /* Make the logo smaller */
+    height: 60px; /* Keep it proportional */
+    z-index: 10; /* Ensures it stays on top */
 }
     
 /* Footer Styling */
@@ -178,20 +184,20 @@ footer {
 }
 
 .contact-info p {
-    margin:#0d0e0d 5px 0;
-    color: #1abc9c ; 
+    margin:#fefffe 5px 0;
+    color: #ffffff ; 
     font-weight:bold;
     text-decoration:none;
-   margin:#000000 5px 0;
+   margin:#ffffff 5px 0;
 }
 .contact-info a:hover {
     text-decoration: underline;
 }
 
 .social-links a {
-    color: #1abc9c;
+    color: #ffffff;
     text-decoration: none;
-    margin:black 5px;
+    margin:rgb(255, 255, 255) 5px;
     font-weight: bold;
 }
 
