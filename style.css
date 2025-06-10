@@ -140,15 +140,20 @@ footer {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 /* Logo Styling */
+.logo {
+    position: absolute; /* Positions the logo in the top left corner */
+    top: 40px; /* Adds margin from the top */
+    left: 40px; /* Adds margin from the left */
+}
+
 .logo img {
-    content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.png'); /* Add the image path */
+    content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.jpg'); /* Add the image path */
     width: 60px; /* Adjust size as needed */
     height: 60px; /* Keep it equal to maintain a square */
     object-fit: cover; /* Ensures it doesn't stretch */
     border: 3px solid #120808; /* Optional: White border around the logo */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
     display: block; /* Ensures it's treated as a block element */
-    margin: 10px auto; /* Centers the logo horizontally */
 }
 
     
