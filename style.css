@@ -201,3 +201,30 @@ footer {
     font-size: 14px;
     opacity: 0.8;
 }
+.share-this-blog {
+    margin-top: 40px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .share-this-blog h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .share-this-blog a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .share-this-blog img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s ease;
+  }
+  
+  .share-this-blog img:hover {
+    transform: scale(1.2);
+  }
