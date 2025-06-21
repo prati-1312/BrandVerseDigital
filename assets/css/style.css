@@ -208,51 +208,6 @@ footer {
     left: 40px; /* Adds margin from the left */
 }
 
-/* Logo Styling for Different Pages */
-.logo img {
-    content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.jpg'); /* Add the image path */
-    width: 60px; /* Default size */
-    height: 60px; /* Default size */
-    object-fit: cover; /* Ensures it doesn't stretch */
-    border: 3px solid #120808; /* Optional: White border around the logo */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    display: block; /* Ensures it's treated as a block element */
-}
-
-.logo.index-page img {
-    width: 80px; /* Larger logo for index.html */
-    height: 80px; /* Larger logo for index.html */
-}
-
-.logo.about-page img {
-    width: 70px; /* Adjusted logo size for about.html */
-    height: 70px; /* Adjusted logo size for about.html */
-}
-
-.logo.blog-page img {
-    width: 65px; /* Adjusted logo size for blog.html */
-    height: 65px; /* Adjusted logo size for blog.html */
-    position: absolute;
-    top: 20px; /* Adjust vertical position */
-    left: 40px; /* Uniform margin from left */
-}
-
-.logo.services-page img {
-    width: 75px; /* Adjusted logo size for services.html */
-    height: 75px; /* Adjusted logo size for services.html */
-    position: absolute;
-    top: 20px; /* Adjust vertical position */
-    left: 40px; /* Uniform margin from left */
-}
-
-.logo.testimonials-page img {
-    width: 68px; /* Adjusted logo size for testimonials.html */
-    height: 68px; /* Adjusted logo size for testimonials.html */
-    position: absolute;
-    top: 20px; /* Adjust vertical position */
-    left: 40px; /* Uniform margin from left */
-}
-
 .logo img {
     content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.jpg'); /* Add the image path */
     width: 60px; /* Adjust size as needed */
