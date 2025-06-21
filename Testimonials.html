@@ -39,6 +39,54 @@
       <a href="https://forms.gle/jPgR4j9Kk19Zhc4i7" target="_blank" class="btn btn-success">Submit a Testimonial</a>
     </div>
   </section>
+<section id="review-form" style="padding: 40px 0; background-color: #f9f9f9;">
+    <div class="container text-center">
+        <h2>Write a Review</h2>
+        <form id="testimonialForm" style="max-width: 600px; margin: 0 auto; text-align: left;">
+            <div class="form-group" style="margin-bottom: 20px;">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <textarea name="message" class="form-control" rows="4" placeholder="Your Review" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 5px;">Submit Review</button>
+            <div id="submissionStatus" style="margin-top: 20px; color: green;"></div>
+        </form>
+    </div>
+</section>
+
+<section id="testimonials" style="padding: 40px 0;">
+    <div class="container text-center">
+        <h2>What People Say</h2>
+        <div id="testimonialList" style="margin-top: 20px;">
+            <!-- Reviews will appear here -->
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('testimonialForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = event.target.name.value.trim();
+        const message = event.target.message.value.trim();
+        if (name && message) {
+            const testimonialList = document.getElementById('testimonialList');
+            const newTestimonial = document.createElement('div');
+            newTestimonial.className = 'testimonial-item';
+            newTestimonial.style.marginBottom = '20px';
+            newTestimonial.style.padding = '15px';
+            newTestimonial.style.border = '1px solid #ddd';
+            newTestimonial.style.borderRadius = '5px';
+            newTestimonial.style.backgroundColor = '#fff';
+            newTestimonial.innerHTML = `<strong style="display: block; margin-bottom: 10px;">${name}</strong><p>${message}</p>`;
+            testimonialList.appendChild(newTestimonial);
+            document.getElementById('submissionStatus').textContent = 'Thank you for your review!';
+            event.target.reset();
+        } else {
+            document.getElementById('submissionStatus').textContent = 'Please fill out all fields.';
+        }
+    });
+</script>
 
   <footer>
     <footer>
