@@ -1,235 +1,99 @@
-/* General Styling */
+/* Reset & Base Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    margin:20px ;
-    background: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
     color: #333;
-}
-
-/* Header */
-header {
-    background:#e66db1;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    /* Header background */
-header {
-    background: #e66db1;
+  }
+  
+  /* Header - Light Pink */
+  header {
+    background: #f8c4e5; /* Light pink */
     padding: 10px 0;
     color: white;
   }
   
-/* Navigation */
-nav {
-    background: #b31e72;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-nav a:hover {
-    background: #ffffff;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 50px;
-    background: #ffffff;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.hero h1 {
-    color: #2c3e50;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #555;
-}
-
-/* CTA Section */
-.cta {
-    text-align: center;
-    padding: 20px;
-    background: #ffffff;
-    color: white;
-    margin: 20px auto;
-    width: 60%;
-    border-radius: 10px;
-}
-
-.cta a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    background: #2c3e50;
-    border-radius: 5px;
-}
-
-.cta a:hover {
-    background: #34495e;
-}
-
-/* Footer */
-footer {
-    background:#b31e72;
-   
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-.about-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-.services-container {
+  /* Header Container */
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-.service {
-    width: 80%;
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-.service h2 {
-    color: #333;
-}
-
-.service p {
-    color: #666;
-    
-}
-.Testimonials-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo - Left aligned */
+  .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
+  
+  /* Navigation Bar - Dark Pink */
+  .nav-bar {
+    background: #ef40a3; /* Darker pink */
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-.Testimonials {
-    width: 80%;
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-/* Logo Styling */
-.logo {
-    position: absolute; /* Positions the logo in the top left corner */
-    top: 40px; /* Adds margin from the top */
-    left: 40px; /* Adds margin from the left */
-}
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    opacity: 0.7;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer - Same as Nav Bar */
+  footer {
+    background: #ef40a3; /* Darker pink */
 
-.logo img {
-    content: url('/Users/pratikshyasahoo/Desktop/BrandVerseDigital/images/logo.jpg'); /* Add the image path */
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Keep it equal to maintain a square */
-    object-fit: cover; /* Ensures it doesn't stretch */
-    border: 3px solid #120808; /* Optional: White border around the logo */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    display: block; /* Ensures it's treated as a block element */
-}
-
-    
-/* Footer Styling */
-footer {
-    background: #e66db1;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    margin:#fefffe 5px 0;
-    color: #ffffff ; 
-    font-weight:bold;
-    text-decoration:none;
-   margin:#ffffff 5px 0;
-}
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.social-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin:rgb(255, 255, 255) 5px;
-    font-weight: bold;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Copyright */
-.copyright {
-    margin-top: 10px;
-    font-size: 14px;
-    opacity: 0.8;
-}
-.share-this-blog {
-    margin-top: 40px;
-    padding: 15px;
-    border-top: 1px solid #ccc;
-    text-align: center;
+    padding: 20px 0;
   }
   
-  .share-this-blog h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .header-container,
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   
-  .share-this-blog a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-  }
+    .nav-links {
+      gap: 10px;
+      padding-top: 10px;
+    }
   
-  .share-this-blog img {
-    width: 36px;
-    height: 36px;
-    transition: transform 0.2s ease;
-  }
+    .logo img {
+      height: 40px;
+    }
   
-  .share-this-blog img:hover {
-    transform: scale(1.2);
+    main {
+      margin: 20px;
+    }
   }
